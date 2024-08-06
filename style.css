@@ -1,20 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    display: grid;
+    place-items: center;
+}
+
 #title {
     text-align: center;
-    color: aqua;
-    font-family: 'Poppins', sans-serif;
+    color: #00bfff; /* usar cores em formato hexadecimal */
     font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 .rodape {
-    color: red;
-    font-size: 1.48rem;
+    background-color: #ccc;
+    padding: 20px;
     text-align: center;
-    background-color: rgb(201, 200, 200);
-    padding:20px;
+    color: #666;
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px; /* adicionar uma largura máxima */
+    margin: 0 auto;
+}
+
+.ok {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: #f44336; /* usar cores em formato hexadecimal */
+    color: #fff;
+    cursor: pointer;
+    margin: 30px 0px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
     border: 1px solid;
 }
