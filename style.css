@@ -1,56 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-    display: grid;
-    place-items: center;
+    background: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
 }
 
 #title {
     text-align: center;
-    color: #00bfff; /* usar cores em formato hexadecimal */
+    color: red;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin: 50px;
+    letter-spacing: 2px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 100px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 140%;
+    max-width: 500px;
+    padding: 15px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+input:focus {
+    border-color: red;
+    outline: none;
+}
+
+.ok {
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+    align-self: flex-end;
+}
+
+.ok:hover {
+    background-color: #ccc;
+    cursor: pointer;
 }
 
 .rodape {
     background-color: #ccc;
     padding: 20px;
     text-align: center;
-    color: #666;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 400px; /* adicionar uma largura máxima */
-    margin: 0 auto;
-}
-
-.ok {
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 10px;
-    background-color: #f44336; /* usar cores em formato hexadecimal */
-    color: #fff;
-    cursor: pointer;
-    margin: 30px 0px;
-}
-
-input {
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid;
+    margin-top: auto;
+    width: 100%;
 }
